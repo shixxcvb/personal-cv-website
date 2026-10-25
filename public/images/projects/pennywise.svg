@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pennyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF4FF"/>
+      <stop offset="50%" stop-color="#F5F3FF"/>
+      <stop offset="100%" stop-color="#EDE9FE"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <filter id="shadowPenny" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#4C1D95" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#pennyGrad)"/>
+
+  <!-- Browser Frame -->
+  <g transform="translate(60, 45)" filter="url(#shadowPenny)">
+    <rect width="1080" height="660" rx="16" fill="#FFFFFF"/>
+    
+    <!-- Top Chrome -->
+    <path d="M 0 16 C 0 7.16 7.16 0 16 0 L 1064 0 C 1072.84 0 1080 7.16 1080 16 L 1080 48 L 0 48 Z" fill="#F8FAFC"/>
+    <circle cx="28" cy="24" r="6" fill="#FF5F56"/>
+    <circle cx="48" cy="24" r="6" fill="#FFBD2E"/>
+    <circle cx="68" cy="24" r="6" fill="#27C93F"/>
+    
+    <rect x="120" y="10" width="840" height="28" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <circle cx="140" cy="24" r="4" fill="#10B981"/>
+    <text x="156" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#334155" font-weight="500">https://penny-wise-r4rc.vercel.app</text>
+    <text x="940" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B">Live App</text>
+
+    <!-- App Nav -->
+    <rect x="0" y="48" width="1080" height="60" fill="#FFFFFF" stroke="#F1F5F9" stroke-width="1"/>
+    <circle cx="48" cy="78" r="14" fill="#059669"/>
+    <text x="42" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#FFFFFF" font-weight="bold">₱</text>
+    <text x="74" y="84" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#0F172A" font-weight="700">Penny<tspan fill="#059669">Wise</tspan></text>
+    
+    <text x="240" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#059669" font-weight="600">Dashboard</text>
+    <rect x="238" y="96" width="68" height="3" rx="1.5" fill="#059669"/>
+    <text x="340" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748B" font-weight="500">Transactions</text>
+    <text x="455" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748B" font-weight="500">Budgets</text>
+    <text x="545" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#64748B" font-weight="500">Analytics</text>
+    
+    <rect x="910" y="62" width="140" height="32" rx="8" fill="#ECFDF5"/>
+    <text x="926" y="82" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#065F46" font-weight="600">+ Add Expense</text>
+
+    <!-- 3 Summary Metric Cards -->
+    <g transform="translate(36, 126)">
+      <!-- Total Balance -->
+      <rect x="0" y="0" width="316" height="106" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="24" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748B" font-weight="500">Total Net Balance</text>
+      <text x="24" y="66" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#0F172A" font-weight="800">₱24,850.00</text>
+      <text x="24" y="90" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#059669" font-weight="600">↑ 12% saved vs last month</text>
+
+      <!-- Monthly Budget -->
+      <rect x="346" y="0" width="316" height="106" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="370" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748B" font-weight="500">Monthly Spending Budget</text>
+      <text x="370" y="66" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#0F172A" font-weight="800">₱8,420 / ₱15,000</text>
+      <rect x="370" y="80" width="268" height="6" rx="3" fill="#F1F5F9"/>
+      <rect x="370" y="80" width="150" height="6" rx="3" fill="#10B981"/>
+
+      <!-- Savings Goal -->
+      <rect x="692" y="0" width="316" height="106" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="716" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748B" font-weight="500">IT Thesis &amp; Equipment Fund</text>
+      <text x="716" y="66" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#0F172A" font-weight="800">₱16,430.00</text>
+      <text x="716" y="90" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#7C3AED" font-weight="600">82% of target goal reached</text>
+    </g>
+
+    <!-- Bottom Split: Spending Analytics & Recent Transactions -->
+    <g transform="translate(36, 252)">
+      <!-- Left: Spending Chart Breakdown -->
+      <rect x="0" y="0" width="560" height="370" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="24" y="36" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#0F172A" font-weight="700">Expense Distribution</text>
+      <text x="24" y="56" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#64748B">Categorized academic and personal living expenses</text>
+
+      <!-- Bar Chart -->
+      <g transform="translate(30, 80)">
+        <!-- Bar 1: Tuition & School -->
+        <rect x="20" y="80" width="50" height="180" rx="6" fill="#7C3AED"/>
+        <text x="45" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#4C1D95" text-anchor="middle" font-weight="600">₱4.2k</text>
+        <text x="45" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Academic</text>
+
+        <!-- Bar 2: Food & Allowance -->
+        <rect x="120" y="110" width="50" height="150" rx="6" fill="#059669"/>
+        <text x="145" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#065F46" text-anchor="middle" font-weight="600">₱2.8k</text>
+        <text x="145" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Food</text>
+
+        <!-- Bar 3: Tech & Tools -->
+        <rect x="220" y="150" width="50" height="110" rx="6" fill="#EC4899"/>
+        <text x="245" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9D174D" text-anchor="middle" font-weight="600">₱1.5k</text>
+        <text x="245" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Tech &amp; Sub</text>
+
+        <!-- Bar 4: Transport -->
+        <rect x="320" y="190" width="50" height="70" rx="6" fill="#3B82F6"/>
+        <text x="345" y="180" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#1E40AF" text-anchor="middle" font-weight="600">₱950</text>
+        <text x="345" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Commute</text>
+
+        <!-- Bar 5: Savings -->
+        <rect x="420" y="50" width="50" height="210" rx="6" fill="#10B981"/>
+        <text x="445" y="40" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#065F46" text-anchor="middle" font-weight="600">₱5.0k</text>
+        <text x="445" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Savings</text>
+
+        <line x1="0" y1="260" x2="490" y2="260" stroke="#CBD5E1" stroke-width="1"/>
+      </g>
+
+      <!-- Right: Recent Activity -->
+      <rect x="586" y="0" width="422" height="370" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+      <text x="610" y="36" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#0F172A" font-weight="700">Recent Transactions</text>
+
+      <!-- Item 1 -->
+      <rect x="610" y="60" width="374" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <circle cx="636" cy="90" r="14" fill="#EDE9FE"/>
+      <text x="630" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#7C3AED">💻</text>
+      <text x="660" y="85" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#0F172A" font-weight="600">VS Code &amp; Domain Renewal</text>
+      <text x="660" y="102" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B">Academic Tools · Yesterday</text>
+      <text x="960" y="93" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#DC2626" font-weight="700" text-anchor="end">-₱540.00</text>
+
+      <!-- Item 2 -->
+      <rect x="610" y="130" width="374" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <circle cx="636" cy="160" r="14" fill="#D1FAE5"/>
+      <text x="630" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#059669">💰</text>
+      <text x="660" y="155" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#0F172A" font-weight="600">Monthly Student Stipend</text>
+      <text x="660" y="172" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B">Allowance · Oct 20</text>
+      <text x="960" y="163" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#059669" font-weight="700" text-anchor="end">+₱3,500.00</text>
+
+      <!-- Item 3 -->
+      <rect x="610" y="200" width="374" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <circle cx="636" cy="230" r="14" fill="#FEE2E2"/>
+      <text x="630" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#DC2626">📚</text>
+      <text x="660" y="225" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#0F172A" font-weight="600">Database Reference Manual</text>
+      <text x="660" y="242" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B">DNSC Books · Oct 18</text>
+      <text x="960" y="233" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#DC2626" font-weight="700" text-anchor="end">-₱420.00</text>
+
+      <!-- Item 4 -->
+      <rect x="610" y="270" width="374" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+      <circle cx="636" cy="300" r="14" fill="#E0F2FE"/>
+      <text x="630" y="305" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#0284C7">🚌</text>
+      <text x="660" y="295" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#0F172A" font-weight="600">Campus Transport Card</text>
+      <text x="660" y="312" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B">Panabo Transit · Oct 16</text>
+      <text x="960" y="303" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#DC2626" font-weight="700" text-anchor="end">-₱180.00</text>
+    </g>
+  </g>
+
+  <!-- Clear replacement label -->
+  <g transform="translate(60, 715)">
+    <text x="0" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#047857" font-weight="500">PennyWise – Personal Expense Tracker · Deployed on Vercel · Upload screenshot to public/images/projects/pennywise.webp</text>
+  </g>
+</svg>

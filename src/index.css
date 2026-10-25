@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-universe-light: #FCFAFF;
+    --text-universe-light: #261D39;
+    --lavender: #B8A2F9;
+    --lilac: #D9C8FF;
+    --pink: #F8C8E8;
+    --periwinkle: #A5B4FC;
+    --deep-violet: #4D347B;
+  }
+
+  .dark {
+    --bg-universe-dark: #120D1D;
+    --card-universe-dark: #1F1730;
+    --lavender-dark: #C4B2FF;
+    --pink-dark: #F1BCE1;
+    --text-universe-dark: #FAF7FF;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C4B2FF;
+    border-radius: 9999px;
+  }
+  .dark ::-webkit-scrollbar-thumb {
+    background: #3B2A57;
+  }
+}
+
+/* Kinetic Marquee Keyframes */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Floating 3D and Cosmic Elements */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(3deg);
+  }
+}
+
+@keyframes floatOrbital {
+  0% {
+    transform: rotate(0deg) translateX(12px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(12px) rotate(-360deg);
+  }
+}
+
+@keyframes pulseStar {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.25) rotate(90deg);
+    opacity: 1;
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-float-gentle {
+  animation: floatGentle 6s ease-in-out infinite;
+}
+
+.animate-orbital {
+  animation: floatOrbital 10s linear infinite;
+}
+
+.animate-star-pulse {
+  animation: pulseStar 4s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+/* Noise overlay utility */
+.bg-grain {
+  background-image: radial-gradient(rgba(184, 162, 249, 0.12) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.dark .bg-grain {
+  background-image: radial-gradient(rgba(196, 178, 255, 0.08) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #111827 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}

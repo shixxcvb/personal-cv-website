@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bookGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF7ED"/>
+      <stop offset="50%" stop-color="#FDF2F8"/>
+      <stop offset="100%" stop-color="#F3E8FF"/>
+    </linearGradient>
+    <linearGradient id="cover1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899"/>
+      <stop offset="100%" stop-color="#BE185D"/>
+    </linearGradient>
+    <linearGradient id="cover2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+    <linearGradient id="cover3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </linearGradient>
+    <filter id="shadowBook" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#831843" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bookGrad)"/>
+
+  <!-- Browser Frame -->
+  <g transform="translate(60, 45)" filter="url(#shadowBook)">
+    <rect width="1080" height="660" rx="16" fill="#FFFFFF"/>
+    
+    <!-- Top Chrome -->
+    <path d="M 0 16 C 0 7.16 7.16 0 16 0 L 1064 0 C 1072.84 0 1080 7.16 1080 16 L 1080 48 L 0 48 Z" fill="#FFF1F2"/>
+    <circle cx="28" cy="24" r="6" fill="#FF5F56"/>
+    <circle cx="48" cy="24" r="6" fill="#FFBD2E"/>
+    <circle cx="68" cy="24" r="6" fill="#27C93F"/>
+    
+    <rect x="120" y="10" width="840" height="28" rx="8" fill="#FFFFFF" stroke="#FECDD3" stroke-width="1"/>
+    <circle cx="140" cy="24" r="4" fill="#E11D48"/>
+    <text x="156" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#881337" font-weight="500">https://book-nest-five-beryl.vercel.app</text>
+    <text x="920" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E11D48">GitHub Verified</text>
+
+    <!-- App Nav -->
+    <rect x="0" y="48" width="1080" height="60" fill="#FFFFFF" stroke="#FFE4E6" stroke-width="1"/>
+    <circle cx="48" cy="78" r="14" fill="#E11D48"/>
+    <text x="42" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#FFFFFF" font-weight="bold">B</text>
+    <text x="74" y="84" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#1C1917" font-weight="700">Book<tspan fill="#E11D48">Nest</tspan></text>
+    
+    <!-- Genre links -->
+    <text x="240" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#E11D48" font-weight="600">All Books</text>
+    <rect x="238" y="96" width="60" height="3" rx="1.5" fill="#E11D48"/>
+    <text x="330" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#78716C" font-weight="500">Fiction</text>
+    <text x="410" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#78716C" font-weight="500">Technology</text>
+    <text x="515" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#78716C" font-weight="500">Self-Growth</text>
+    
+    <!-- Search Bar in Header -->
+    <rect x="630" y="62" width="230" height="32" rx="16" fill="#F5F5F4"/>
+    <text x="650" y="82" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#A8A29E">Search titles or authors...</text>
+
+    <!-- Shopping Cart Demo Badge -->
+    <rect x="880" y="62" width="170" height="32" rx="16" fill="#FFF1F2"/>
+    <text x="900" y="82" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#BE123C" font-weight="600">Cart: 3 items (₱1,280)</text>
+
+    <!-- Hero Showcase Strip -->
+    <rect x="36" y="126" width="1008" height="110" rx="12" fill="#FFF1F2"/>
+    <text x="64" y="165" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#881337" font-weight="800">Discover Stories &amp; Expand Knowledge</text>
+    <text x="64" y="192" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#9F1239">Explore curated reads, save favorites to your wishlist, and manage your cart.</text>
+    <rect x="870" y="152" width="145" height="38" rx="8" fill="#E11D48"/>
+    <text x="896" y="176" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#FFFFFF" font-weight="700">Explore Catalog</text>
+
+    <!-- Grid of 3 Books -->
+    <g transform="translate(36, 256)">
+      <!-- Book Card 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="316" height="365" rx="12" fill="#FAFAF9" stroke="#E7E5E4" stroke-width="1"/>
+        <rect x="24" y="24" width="268" height="190" rx="8" fill="url(#cover1)"/>
+        <text x="45" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#FFFFFF" font-weight="bold">CLEAN CODE</text>
+        <text x="45" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#FCE7F3">A Handbook of Agile Software</text>
+        <circle cx="260" cy="45" r="12" fill="#FFFFFF" fill-opacity="0.2"/>
+        <text x="255" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#FFFFFF">♥</text>
+        <text x="24" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#1C1917" font-weight="700">Clean Code Craftsman</text>
+        <text x="24" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#78716C">Software Engineering · Robert C.</text>
+        <text x="24" y="295" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#BE123C" font-weight="800">₱499.00</text>
+        <rect x="24" y="312" width="268" height="34" rx="6" fill="#E11D48"/>
+        <text x="110" y="333" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600">Add to Cart</text>
+      </g>
+
+      <!-- Book Card 2 -->
+      <g transform="translate(346, 0)">
+        <rect x="0" y="0" width="316" height="365" rx="12" fill="#FAFAF9" stroke="#E7E5E4" stroke-width="1"/>
+        <rect x="24" y="24" width="268" height="190" rx="8" fill="url(#cover2)"/>
+        <text x="45" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#FFFFFF" font-weight="bold">THE DESIGN OF</text>
+        <text x="45" y="98" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#FFFFFF" font-weight="bold">EVERYDAY THINGS</text>
+        <text x="45" y="125" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#EDE9FE">Revised and Expanded Edition</text>
+        <circle cx="260" cy="45" r="12" fill="#FFFFFF" fill-opacity="0.2"/>
+        <text x="255" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#FFFFFF">♥</text>
+        <text x="24" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#1C1917" font-weight="700">Design of Everyday Things</text>
+        <text x="24" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#78716C">UX &amp; Cognitive Design · Don N.</text>
+        <text x="24" y="295" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#BE123C" font-weight="800">₱450.00</text>
+        <rect x="24" y="312" width="268" height="34" rx="6" fill="#1C1917"/>
+        <text x="120" y="333" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600">In Cart ✓</text>
+      </g>
+
+      <!-- Book Card 3 -->
+      <g transform="translate(692, 0)">
+        <rect x="0" y="0" width="316" height="365" rx="12" fill="#FAFAF9" stroke="#E7E5E4" stroke-width="1"/>
+        <rect x="24" y="24" width="268" height="190" rx="8" fill="url(#cover3)"/>
+        <text x="45" y="75" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#FFFFFF" font-weight="bold">MODERN JS</text>
+        <text x="45" y="100" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#E0F2FE">Async, ESNext &amp; Architecture</text>
+        <circle cx="260" cy="45" r="12" fill="#FFFFFF" fill-opacity="0.2"/>
+        <text x="255" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#FFFFFF">♥</text>
+        <text x="24" y="240" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#1C1917" font-weight="700">JavaScript for Web Devs</text>
+        <text x="24" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#78716C">Frontend Engineering · Alex M.</text>
+        <text x="24" y="295" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#BE123C" font-weight="800">₱330.00</text>
+        <rect x="24" y="312" width="268" height="34" rx="6" fill="#E11D48"/>
+        <text x="110" y="333" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#FFFFFF" font-weight="600">Add to Cart</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Clear replacement label -->
+  <g transform="translate(60, 715)">
+    <text x="0" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#BE123C" font-weight="500">BookNest – Digital Bookstore · Deployed on Vercel · Upload screenshot to public/images/projects/booknest.webp</text>
+  </g>
+</svg>

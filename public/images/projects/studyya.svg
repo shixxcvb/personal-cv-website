@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F4FD"/>
+      <stop offset="50%" stop-color="#EFE9FA"/>
+      <stop offset="100%" stop-color="#E2D7F7"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#A78BFA"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#4D347B" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle decorative grid -->
+  <g opacity="0.15">
+    <path d="M 0 150 L 1200 150 M 0 300 L 1200 300 M 0 450 L 1200 450 M 0 600 L 1200 600" stroke="#7C3AED" stroke-width="1" stroke-dasharray="6,6"/>
+    <path d="M 200 0 L 200 750 M 400 0 L 400 750 M 600 0 L 600 750 M 800 0 L 800 750 M 1000 0 L 1000 750" stroke="#7C3AED" stroke-width="1" stroke-dasharray="6,6"/>
+  </g>
+
+  <!-- Browser Window Container -->
+  <g transform="translate(60, 45)" filter="url(#shadow)">
+    <!-- Browser Chrome Frame -->
+    <rect width="1080" height="660" rx="16" fill="#FFFFFF"/>
+    
+    <!-- Top Browser Header -->
+    <path d="M 0 16 C 0 7.16 7.16 0 16 0 L 1064 0 C 1072.84 0 1080 7.16 1080 16 L 1080 48 L 0 48 Z" fill="#F4F1FB"/>
+    <circle cx="28" cy="24" r="6" fill="#FF5F56"/>
+    <circle cx="48" cy="24" r="6" fill="#FFBD2E"/>
+    <circle cx="68" cy="24" r="6" fill="#27C93F"/>
+    
+    <!-- URL Bar -->
+    <rect x="120" y="10" width="840" height="28" rx="8" fill="#FFFFFF" stroke="#E6DFF5" stroke-width="1"/>
+    <circle cx="140" cy="24" r="4" fill="#8B5CF6"/>
+    <text x="156" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6B5C82" font-weight="500">https://studyya-six.vercel.app</text>
+    <text x="940" y="29" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#9D8BB5">Live Verified</text>
+
+    <!-- App Header Navbar -->
+    <rect x="0" y="48" width="1080" height="60" fill="#FFFFFF" stroke="#F0EAF8" stroke-width="1"/>
+    <!-- Logo -->
+    <circle cx="48" cy="78" r="14" fill="#8B5CF6"/>
+    <text x="41" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#FFFFFF" font-weight="bold">S</text>
+    <text x="74" y="84" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#261D39" font-weight="700">Study<tspan fill="#8B5CF6">Ya</tspan></text>
+    
+    <!-- Navigation Items -->
+    <text x="240" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#8B5CF6" font-weight="600">Overview</text>
+    <rect x="238" y="96" width="56" height="3" rx="1.5" fill="#8B5CF6"/>
+    <text x="330" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#6B5C82" font-weight="500">Study Planner</text>
+    <text x="450" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#6B5C82" font-weight="500">Organization</text>
+    <text x="570" y="83" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#6B5C82" font-weight="500">Notes &amp; Tasks</text>
+    
+    <!-- User Badge -->
+    <rect x="920" y="62" width="130" height="32" rx="16" fill="#F3EEFB"/>
+    <circle cx="936" cy="78" r="10" fill="#D9C8FF"/>
+    <text x="956" y="82" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#4D347B" font-weight="600">Student Portal</text>
+
+    <!-- Main Content Area -->
+    <!-- Hero / Welcome Banner -->
+    <rect x="36" y="132" width="1008" height="130" rx="12" fill="url(#primaryGrad)"/>
+    <text x="68" y="178" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#FFFFFF" font-weight="700">Welcome Back, Scholar!</text>
+    <text x="68" y="206" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#EAE2FC">Keep up your momentum — 4 study modules planned for today</text>
+    <rect x="68" y="222" width="140" height="26" rx="6" fill="#FFFFFF" fill-opacity="0.2"/>
+    <text x="82" y="239" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#FFFFFF" font-weight="600">Term 2: In Progress</text>
+
+    <!-- Left Column: Study Plan Schedule -->
+    <rect x="36" y="282" width="640" height="340" rx="12" fill="#FAF8FE" stroke="#ECE4F8" stroke-width="1"/>
+    <text x="60" y="318" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#261D39" font-weight="700">Weekly Study Timeline</text>
+    <text x="60" y="338" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#807297">Organized by priority and deadlines</text>
+
+    <!-- Schedule Card 1 -->
+    <rect x="60" y="360" width="592" height="66" rx="8" fill="#FFFFFF" stroke="#E7DEFB" stroke-width="1"/>
+    <rect x="74" y="374" width="4" height="38" rx="2" fill="#8B5CF6"/>
+    <text x="90" y="392" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#261D39" font-weight="600">Web Development Final Sprint</text>
+    <text x="90" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#807297">HTML5, CSS Animations, JavaScript DOM</text>
+    <rect x="520" y="380" width="116" height="26" rx="6" fill="#EEF2FF"/>
+    <text x="536" y="397" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#4338CA" font-weight="600">9:00 - 11:30 AM</text>
+
+    <!-- Schedule Card 2 -->
+    <rect x="60" y="438" width="592" height="66" rx="8" fill="#FFFFFF" stroke="#E7DEFB" stroke-width="1"/>
+    <rect x="74" y="452" width="4" height="38" rx="2" fill="#EC4899"/>
+    <text x="90" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#261D39" font-weight="600">Information Management Systems</text>
+    <text x="90" y="488" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#807297">Database normalizations &amp; relational queries</text>
+    <rect x="520" y="458" width="116" height="26" rx="6" fill="#FDF2F8"/>
+    <text x="536" y="475" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#BE185D" font-weight="600">1:30 - 3:00 PM</text>
+
+    <!-- Schedule Card 3 -->
+    <rect x="60" y="516" width="592" height="66" rx="8" fill="#FFFFFF" stroke="#E7DEFB" stroke-width="1"/>
+    <rect x="74" y="530" width="4" height="38" rx="2" fill="#10B981"/>
+    <text x="90" y="548" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#261D39" font-weight="600">Systems Analysis &amp; Design Group Work</text>
+    <text x="90" y="566" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#807297">Figma flowcharts and presentation preparation</text>
+    <rect x="520" y="536" width="116" height="26" rx="6" fill="#ECFDF5"/>
+    <text x="536" y="553" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#047857" font-weight="600">4:00 - 5:30 PM</text>
+
+    <!-- Right Column: Focus & Productivity Metrics -->
+    <rect x="696" y="282" width="348" height="340" rx="12" fill="#FAF8FE" stroke="#ECE4F8" stroke-width="1"/>
+    <text x="720" y="318" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#261D39" font-weight="700">Study Progress</text>
+
+    <!-- Progress Ring Mini Widget -->
+    <circle cx="870" cy="390" r="48" fill="none" stroke="#E9DDFB" stroke-width="10"/>
+    <circle cx="870" cy="390" r="48" fill="none" stroke="#8B5CF6" stroke-width="10" stroke-dasharray="230" stroke-dashoffset="55"/>
+    <text x="852" y="396" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#261D39" font-weight="bold">76%</text>
+    <text x="815" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#6B5C82" font-weight="500">Weekly Goal Completed</text>
+
+    <!-- Checklist items -->
+    <rect x="720" y="488" width="300" height="34" rx="6" fill="#FFFFFF" stroke="#E7DEFB" stroke-width="1"/>
+    <circle cx="738" cy="505" r="7" fill="#8B5CF6"/>
+    <path d="M 735 505 L 737 507 L 742 502" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+    <text x="754" y="510" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#372D4D">Submit BSIT Project Pitch</text>
+
+    <rect x="720" y="530" width="300" height="34" rx="6" fill="#FFFFFF" stroke="#E7DEFB" stroke-width="1"/>
+    <circle cx="738" cy="547" r="7" fill="#8B5CF6"/>
+    <path d="M 735 547 L 737 549 L 742 544" stroke="#FFFFFF" stroke-width="1.8" fill="none"/>
+    <text x="754" y="552" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#372D4D">Revise Wireframes on Figma</text>
+
+    <rect x="720" y="572" width="300" height="34" rx="6" fill="#FFFFFF" stroke="#E7DEFB" stroke-width="1"/>
+    <circle cx="738" cy="589" r="7" fill="none" stroke="#D1C4E9" stroke-width="2"/>
+    <text x="754" y="594" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#71628A">Review Cloud Hosting Settings</text>
+  </g>
+
+  <!-- Clear replacement label as requested -->
+  <g transform="translate(60, 715)">
+    <text x="0" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#7C6B98" font-weight="500">StudyYa – Smart Study Assistant · Deployed on Vercel · Upload screenshot to public/images/projects/studyya.webp</text>
+  </g>
+</svg>
