@@ -100,7 +100,7 @@ export function Projects() {
                 key={project.id}
                 onMouseEnter={() => setHoveredProjectId(project.id)}
                 onMouseLeave={() => setHoveredProjectId(null)}
-                className="group relative rounded-2xl border border-[#E4D7F5] dark:border-[#382652] transition-all duration-300 overflow-hidden bg-white/80 dark:bg-[#1A1028]/80 backdrop-blur-md shadow-xs hover:shadow-xl hover:border-[#9D84D6] dark:hover:border-[#7C3AED]"
+                className="group relative rounded-2xl border border-[#E4D7F5] dark:border-[#382652] transition-all duration-300 overflow-hidden bg-white/80 dark:bg-[#1A1028]/80 backdrop-blur-md shadow-xs hover:shadow-xl hover:border-[#9D84D6] dark:hover:border-[#7C3AED] hover:-translate-y-1"
               >
                 {/* Subtle Hover Aura */}
                 <div
@@ -109,7 +109,7 @@ export function Projects() {
                   }`}
                   style={{
                     backgroundColor: project.accentColor,
-                    opacity: isHovered ? 0.05 : 0,
+                    opacity: isHovered ? 0.06 : 0,
                   }}
                 />
 
@@ -133,7 +133,7 @@ export function Projects() {
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-[#1E142B] dark:text-[#F8F5FD] transition-all duration-200 group-hover:translate-x-1"
+                        className="inline-block text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-[#1E142B] dark:text-[#F8F5FD] transition-all duration-300 group-hover:translate-x-2"
                         style={{
                           color: isHovered ? project.accentColor : undefined,
                         }}
@@ -164,9 +164,9 @@ export function Projects() {
                     {/* Right Motif & Actions */}
                     <div className="flex flex-col sm:flex-row lg:flex-col items-start sm:items-center lg:items-end justify-between gap-6 shrink-0">
                       
-                      {/* Geometric Line Motif */}
+                      {/* Geometric Line Motif with smooth interactive rotation */}
                       <div
-                        className="transition-transform duration-500 transform group-hover:scale-105 hidden md:block"
+                        className="transition-all duration-500 transform group-hover:scale-110 group-hover:rotate-6 hidden md:block"
                         style={{ color: project.accentColor }}
                       >
                         {renderProjectMotif(project.id, project.accentColor)}

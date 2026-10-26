@@ -22,8 +22,10 @@ export function useTheme() {
     const root = document.documentElement;
     if (theme === "dark") {
       root.classList.add("dark");
+      root.setAttribute("data-theme", "dark");
     } else {
       root.classList.remove("dark");
+      root.setAttribute("data-theme", "light");
     }
     try {
       localStorage.setItem("charlene_portfolio_theme", theme);

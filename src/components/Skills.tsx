@@ -83,11 +83,11 @@ export function Skills() {
             return (
               <div
                 key={skill.name}
-                className="group p-6 rounded-2xl bg-white/90 dark:bg-[#1A1028]/90 backdrop-blur-md border border-[#E4D7F5] dark:border-[#382652] shadow-2xs hover:border-[#9D84D6] dark:hover:border-[#7C3AED] hover:shadow-md transition-all duration-300"
+                className="group p-6 rounded-2xl bg-white/90 dark:bg-[#1A1028]/90 backdrop-blur-md border border-[#E4D7F5] dark:border-[#382652] shadow-2xs hover:border-[#9D84D6] dark:hover:border-[#7C3AED] hover:shadow-lg hover:-translate-y-1.5 transition-all duration-300"
               >
                 <div className="flex items-center justify-between mb-5">
                   <div
-                    className="w-11 h-11 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110"
+                    className="w-11 h-11 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-115 group-hover:-rotate-6"
                     style={{ backgroundColor: `${skill.color}15`, color: skill.color }}
                   >
                     <IconComp className="w-5 h-5" />
