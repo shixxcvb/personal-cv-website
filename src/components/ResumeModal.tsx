@@ -61,11 +61,13 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
           <div className="border-b border-[#EDE4F7] dark:border-[#312547] print:border-gray-300 pb-6">
             <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
               <div className="flex items-center gap-4">
-                <img
-                  src={PORTFOLIO_DATA.personal.avatarUrl}
-                  alt="Charlene Calamba"
-                  className="w-16 h-20 rounded-lg object-cover object-top border border-[#E4D7F5] dark:border-[#382652] shadow-2xs shrink-0"
-                />
+                <div className="w-16 h-20 rounded-xl bg-gradient-to-b from-[#F5EEFD] to-[#EDE1FA] dark:from-[#2A1D3D] dark:to-[#1B1229] border border-[#E4D7F5] dark:border-[#382652] overflow-hidden flex items-end justify-center shrink-0">
+                  <img
+                    src={PORTFOLIO_DATA.personal.avatarUrl}
+                    alt="Charlene Calamba"
+                    className="w-full h-full object-contain object-bottom"
+                  />
+                </div>
                 <div>
                   <h1 id="resume-title" className="text-2xl md:text-3xl font-black tracking-tight text-[#261D39] dark:text-white">
                     {PORTFOLIO_DATA.personal.fullName}

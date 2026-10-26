@@ -40,7 +40,7 @@ export const PORTFOLIO_DATA = {
     githubUrl: "https://github.com/shixxcvb",
     linkedinUrl: "https://www.linkedin.com/in/charlene-calamba-a89666446/",
     facebookUrl: "https://www.facebook.com/charlenecalamba30",
-    avatarUrl: "/assets/aistudio/chao_4fe8053a.jpg",
+    avatarUrl: "/assets/charlene-transparent.png",
     heroHeadline: "Hey, I'm Charlene!",
     heroSubheading: "Frontend Developer & IT Student",
     heroManifesto: "I turn curiosity into code and creativity into digital experiences.",

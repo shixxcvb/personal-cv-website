@@ -79,24 +79,22 @@ export function Hero({ onOpenResume }: HeroProps) {
 
           </div>
 
-          {/* Right Column: Large, Beautiful Portrait with NO BOX OR CARD (5 cols on sm+) */}
+          {/* Right Column: Natural Cutout Portrait with NO BOX, NO CARD, NO BORDERS (5 cols on sm+) */}
           <div className="sm:col-span-5 flex items-center justify-center sm:justify-end">
             
-            {/* Direct photo presentation with soft ambient glow, no box / no card container */}
-            <div className="relative w-full max-w-[280px] sm:max-w-[340px] md:max-w-[390px] lg:max-w-[440px] group">
+            {/* Pure cutout presentation directly on the page */}
+            <div className="relative w-full max-w-[280px] sm:max-w-[340px] md:max-w-[400px] lg:max-w-[450px] flex justify-center sm:justify-end">
               
-              {/* Soft Dreamy Ambient Backlight */}
-              <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-[#9D84D6]/25 via-[#F6DCEB]/20 to-[#A5B4FC]/25 blur-3xl opacity-75 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+              {/* Soft Dreamy Ambient Backlight Aura directly behind her silhouette */}
+              <div className="absolute -inset-6 rounded-full bg-gradient-to-tr from-[#9D84D6]/30 via-[#F6DCEB]/25 to-[#A5B4FC]/30 blur-3xl opacity-75 dark:opacity-60 pointer-events-none" />
 
-              {/* The Large Photo Itself: Clean, Elegant, No Clumsy Box */}
-              <div className="relative w-full aspect-[3/4] rounded-3xl overflow-hidden shadow-2xl shadow-[#4D247B]/20 dark:shadow-black/60 transition-transform duration-500 group-hover:scale-[1.02]">
-                <img
-                  src={PORTFOLIO_DATA.personal.avatarUrl}
-                  alt="Charlene Calamba"
-                  className="w-full h-full object-cover object-top filter contrast-[1.04] brightness-[1.01]"
-                  loading="eager"
-                />
-              </div>
+              {/* The Genuine Photo Cutout: No box, no border, no rectangular frame */}
+              <img
+                src="/assets/charlene-transparent.png"
+                alt="Charlene Calamba"
+                className="relative z-10 w-full h-auto max-h-[580px] object-contain drop-shadow-[0_15px_30px_rgba(77,36,123,0.18)] dark:drop-shadow-[0_20px_35px_rgba(196,176,247,0.15)] transition-transform duration-500 hover:scale-[1.02]"
+                loading="eager"
+              />
 
             </div>
 
