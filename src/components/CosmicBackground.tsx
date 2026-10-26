@@ -1,41 +1,21 @@
 export function CosmicBackground() {
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-      {/* Dynamic Ambient Gradient Orbs */}
-      <div className="absolute -top-32 -left-32 w-[550px] h-[550px] rounded-full bg-gradient-to-tr from-[#B8A2F9]/30 via-[#D9C8FF]/20 to-[#F8C8E8]/25 blur-[120px] dark:from-[#3B1D66]/40 dark:via-[#261545]/30 dark:to-[#4A1942]/20 animate-float-gentle" />
-      <div className="absolute top-1/3 -right-32 w-[600px] h-[600px] rounded-full bg-gradient-to-bl from-[#A5B4FC]/25 via-[#F8C8E8]/20 to-[#D9C8FF]/20 blur-[130px] dark:from-[#24174D]/35 dark:via-[#371647]/25 dark:to-[#170E2E]/30 animate-float-gentle" style={{ animationDelay: "-3s" }} />
-      <div className="absolute -bottom-40 left-1/4 w-[650px] h-[650px] rounded-full bg-gradient-to-t from-[#B8A2F9]/20 via-[#FAF5FF]/30 to-[#FCE7F3]/25 blur-[140px] dark:from-[#201338]/30 dark:to-transparent" />
+    <div className="fixed inset-0 pointer-events-none overflow-hidden z-0 select-none">
+      {/* Editorial Grain Overlay */}
+      <div className="absolute inset-0 editorial-grain pointer-events-none" />
 
-      {/* Floating Whimsical Cosmic SVGs */}
-      <svg
-        className="absolute top-36 left-[8%] w-8 h-8 text-[#B8A2F9]/60 dark:text-[#C4B2FF]/40 animate-star-pulse"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-      >
-        <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-      </svg>
+      {/* Atmospheric Ambient Lighting Pools */}
+      <div className="absolute -top-40 -left-40 w-[650px] h-[650px] rounded-full bg-gradient-to-br from-[#E8DEFC]/40 via-[#F5EDFC]/30 to-transparent blur-[120px] dark:from-[#2B1747]/40 dark:via-[#1A0E30]/25 dark:to-transparent animate-ambient-glow" />
+      <div className="absolute top-1/3 -right-40 w-[700px] h-[700px] rounded-full bg-gradient-to-bl from-[#F6DCEB]/35 via-[#E6DCFA]/25 to-transparent blur-[140px] dark:from-[#35153E]/30 dark:via-[#221038]/25 dark:to-transparent animate-ambient-glow" style={{ animationDelay: "-6s" }} />
+      <div className="absolute -bottom-40 left-1/4 w-[750px] h-[750px] rounded-full bg-gradient-to-t from-[#EDE4FA]/35 via-[#FCECF7]/25 to-transparent blur-[150px] dark:from-[#1E0D33]/40 dark:to-transparent" />
 
-      <svg
-        className="absolute top-1/2 right-[10%] w-10 h-10 text-[#F8C8E8]/70 dark:text-[#F1BCE1]/40 animate-star-pulse"
-        style={{ animationDelay: "-2s" }}
-        viewBox="0 0 24 24"
-        fill="currentColor"
-      >
-        <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-      </svg>
+      {/* Subtle Editorial Coordinate Markers */}
+      <div className="hidden lg:block absolute top-28 left-8 text-[10px] font-mono tracking-widest text-[#9A8AA8]/40 dark:text-[#8D7A9E]/30">
+        LAT 07°18'N · LON 125°41'E
+      </div>
 
-      <svg
-        className="absolute bottom-48 left-[12%] w-7 h-7 text-[#A5B4FC]/60 dark:text-[#93A5FE]/40 animate-star-pulse"
-        style={{ animationDelay: "-4s" }}
-        viewBox="0 0 24 24"
-        fill="currentColor"
-      >
-        <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
-      </svg>
-
-      {/* Floating playful ring */}
-      <div className="absolute top-[22%] right-[18%] w-12 h-12 rounded-full border-2 border-dashed border-[#B8A2F9]/40 dark:border-[#7C3AED]/30 animate-spin-slow" />
-      <div className="absolute bottom-[28%] right-[5%] w-16 h-16 rounded-full border border-[#F8C8E8]/40 dark:border-[#DB2777]/25 animate-float-gentle" />
+      {/* Hairline Grid Dividers (Subtle, architectural, human-designed) */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(157,132,214,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(157,132,214,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_40%,#000_70%,transparent_100%)] pointer-events-none" />
     </div>
   );
 }

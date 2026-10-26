@@ -1,4 +1,4 @@
-import { ArrowUp, Sparkles, Heart } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import { PORTFOLIO_DATA } from "../data/portfolioData";
 
 export function Footer() {
@@ -65,17 +65,6 @@ export function Footer() {
             </button>
           </div>
 
-        </div>
-
-        {/* Bottom Disclaimer */}
-        <div className="mt-10 pt-6 border-t border-[#EFE7FA] dark:border-[#221636] flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] text-[#86779F] dark:text-[#9585AA]">
-          <p>
-            © {new Date().getFullYear()} {PORTFOLIO_DATA.personal.fullName} · {PORTFOLIO_DATA.personal.school} (BSIT 4B)
-          </p>
-          <div className="flex items-center gap-1.5">
-            <span>Built with React, TypeScript &amp; Tailwind CSS</span>
-            <Sparkles className="w-3.5 h-3.5 text-[#7C3AED] dark:text-[#C4B2FF]" />
-          </div>
         </div>
       </div>
     </footer>

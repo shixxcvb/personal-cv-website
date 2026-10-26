@@ -59,18 +59,8 @@ export function Navbar({ theme, toggleTheme, onOpenResume }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-6">
           
-          {/* Logo Brand with spinning star */}
-          <a
-            href="#home"
-            className="group flex items-center gap-1.5 text-xl font-black tracking-tight text-[#261D39] dark:text-[#FAF7FF] whitespace-nowrap shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#B8A2F9] rounded-xl"
-          >
-            <span className="bg-gradient-to-r from-[#7C3AED] via-[#9333EA] to-[#EC4899] bg-clip-text text-transparent group-hover:opacity-90 transition-opacity">
-              Charlene
-            </span>
-            <span className="text-[#9333EA] dark:text-[#C4B2FF] inline-block transition-transform duration-500 group-hover:rotate-180">
-              ✦
-            </span>
-          </a>
+          {/* Left Spacer (Portfolio text removed as requested) */}
+          <div className="w-8 shrink-0" />
 
           {/* Center Floating Dock (Desktop) */}
           <nav className="hidden lg:flex items-center gap-1 px-3 py-1.5 rounded-full bg-white/70 dark:bg-[#1E152E]/70 backdrop-blur-md border border-[#EBE0F8] dark:border-[#33224B] shadow-2xs">

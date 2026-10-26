@@ -28,82 +28,81 @@ export function Contact() {
       handle: "@shixxcvb",
       url: PORTFOLIO_DATA.personal.githubUrl,
       icon: Github,
-      accent: "#7C3AED",
     },
     {
       name: "LinkedIn",
       handle: "Charlene Calamba",
       url: PORTFOLIO_DATA.personal.linkedinUrl,
       icon: Linkedin,
-      accent: "#0A66C2",
     },
     {
       name: "Facebook",
       handle: "Charlene Calamba",
       url: PORTFOLIO_DATA.personal.facebookUrl,
       icon: Facebook,
-      accent: "#1877F2",
     },
   ];
 
   return (
-    <section id="contact" className="py-28 relative overflow-hidden bg-[#FAF6FD]/60 dark:bg-[#160F24]/60 border-t border-[#EDE0FA] dark:border-[#2C1F3F]">
+    <section id="contact" className="py-28 relative overflow-hidden bg-[#FAF6FD]/60 dark:bg-[#130B1E]/60 border-t border-[#EDE0FA] dark:border-[#2C1C3E]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Massive Expressive Contact Centerpiece */}
-        <div className="text-center max-w-4xl mx-auto mb-20">
-          <div className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-[#7C3AED] dark:text-[#C4B2FF] mb-4">
-            <Sparkles className="w-4 h-4 text-[#9333EA] dark:text-[#F1BCE1] animate-spin-slow" />
-            <span>06</span>
-            <span aria-hidden="true">✦</span>
-            <span>Let's Connect</span>
+        {/* Section Index Kicker */}
+        <div className="text-center mb-4">
+          <div className="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[#7C3AED] dark:text-[#C4B0F7]">
+            <span>08 / Direct Contact</span>
+            <span aria-hidden="true" className="text-[#9D84D6]">·</span>
+            <span>Open for Opportunities</span>
           </div>
+        </div>
 
-          <h2 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-[#261D39] dark:text-[#FAF7FF] leading-tight mb-6">
+        {/* Massive Editorial Headline */}
+        <div className="text-center max-w-4xl mx-auto mb-20">
+          <h2 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-[#1E142B] dark:text-[#F8F5FD] leading-tight mb-6">
             Have an idea?{" "}
-            <span className="bg-gradient-to-r from-[#7C3AED] via-[#9333EA] via-[#C026D3] to-[#EC4899] bg-clip-text text-transparent">
+            <span className="font-editorial-italic font-normal text-[#7C3AED] dark:text-[#C4B0F7] block sm:inline">
               Let's make something wonderful.
             </span>
           </h2>
 
-          <p className="max-w-xl mx-auto text-base sm:text-lg text-[#5B4973] dark:text-[#C2B4D6] leading-relaxed">
-            Whether it's an academic collaboration, a frontend challenge, an internship opportunity, or a friendly hello.
+          <p className="max-w-xl mx-auto text-base sm:text-lg text-[#55426C] dark:text-[#BFB0D6] leading-relaxed">
+            Available for student internships, junior web development opportunities, collaborative software engineering, or a friendly conversation.
           </p>
         </div>
 
-        {/* 3 Core Interactive Contact Vessels */}
+        {/* 3 Core Contact Vessels */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           
           {/* Email Direct Action Card */}
-          <div className="p-8 sm:p-10 rounded-[2.5rem] bg-white dark:bg-[#1E152E] border border-[#E9DDF7] dark:border-[#38264F] shadow-xs hover:border-[#B8A2F9] dark:hover:border-[#7C3AED] hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div className="p-8 sm:p-9 rounded-2xl bg-white/90 dark:bg-[#1A1028]/90 backdrop-blur-md border border-[#E4D7F5] dark:border-[#382652] shadow-2xs hover:border-[#9D84D6] dark:hover:border-[#7C3AED] hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
             <div>
-              <div className="w-14 h-14 rounded-2xl bg-[#F5EEFD] dark:bg-[#2B1B43] text-[#7C3AED] dark:text-[#C4B2FF] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Mail className="w-7 h-7" />
+              <div className="w-12 h-12 rounded-xl bg-[#FAF5FF] dark:bg-[#25153A] text-[#7C3AED] dark:text-[#C4B0F7] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+                <Mail className="w-5 h-5" />
               </div>
-              <span className="text-xs font-black uppercase tracking-wider text-[#7C3AED] dark:text-[#C4B2FF] block mb-1">
-                Email
+              <span className="text-xs font-mono uppercase tracking-wider text-[#7C3AED] dark:text-[#C4B0F7] block mb-1">
+                Direct Email
               </span>
-              <h3 className="text-lg sm:text-xl font-bold text-[#261D39] dark:text-[#FAF7FF] break-all mb-2 font-mono">
+              <h3 className="text-base sm:text-lg font-bold text-[#1E142B] dark:text-[#F8F5FD] break-all mb-2 font-mono">
                 {PORTFOLIO_DATA.personal.email}
               </h3>
-              <p className="text-xs text-[#71618B] dark:text-[#A798BF] leading-relaxed">
-                Direct inquiry for academic projects, internships, or collaboration.
+              <p className="text-xs text-[#6F5E86] dark:text-[#A798BE] leading-relaxed">
+                Send an inquiry regarding projects, opportunities, or questions.
               </p>
             </div>
 
-            <div className="mt-8 pt-4 border-t border-[#F2E8FA] dark:border-[#2F1F46] flex items-center gap-3">
+            <div className="mt-8 pt-4 border-t border-[#F2E8FA] dark:border-[#2C1B40] flex items-center gap-3">
               <a
                 href={`mailto:${PORTFOLIO_DATA.personal.email}`}
-                className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-xs font-black text-white bg-gradient-to-r from-[#7C3AED] to-[#9333EA] hover:opacity-95 shadow-sm transition-all"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-white bg-[#7C3AED] hover:bg-[#6D28D9] shadow-2xs transition-all active:scale-95"
               >
-                <span>Send Email</span>
+                <span>Compose Message</span>
                 <ArrowUpRight className="w-4 h-4" />
               </a>
               <button
                 onClick={handleCopyEmail}
                 type="button"
                 aria-label="Copy email address"
-                className="p-3 rounded-full border border-[#ECE0FA] dark:border-[#3A2D50] text-[#6A5B83] dark:text-[#B1A3C6] hover:bg-[#F4EDFC] dark:hover:bg-[#2D2241] transition-colors"
+                className="p-2.5 rounded-xl border border-[#E4D7F5] dark:border-[#382652] text-[#635079] dark:text-[#B6A6CB] hover:bg-[#FAF5FF] dark:hover:bg-[#25153A] transition-colors"
                 title="Copy to clipboard"
               >
                 {copied ? <Check className="w-4 h-4 text-emerald-500" /> : <Copy className="w-4 h-4" />}
@@ -111,27 +110,27 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Phone Direct Action Card */}
-          <div className="p-8 sm:p-10 rounded-[2.5rem] bg-white dark:bg-[#1E152E] border border-[#E9DDF7] dark:border-[#38264F] shadow-xs hover:border-[#B8A2F9] dark:hover:border-[#7C3AED] hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          {/* Telephone Dial Card */}
+          <div className="p-8 sm:p-9 rounded-2xl bg-white/90 dark:bg-[#1A1028]/90 backdrop-blur-md border border-[#E4D7F5] dark:border-[#382652] shadow-2xs hover:border-[#9D84D6] dark:hover:border-[#7C3AED] hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
             <div>
-              <div className="w-14 h-14 rounded-2xl bg-[#F5EEFD] dark:bg-[#2B1B43] text-[#7C3AED] dark:text-[#C4B2FF] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <Phone className="w-7 h-7" />
+              <div className="w-12 h-12 rounded-xl bg-[#FAF5FF] dark:bg-[#25153A] text-[#7C3AED] dark:text-[#C4B0F7] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+                <Phone className="w-5 h-5" />
               </div>
-              <span className="text-xs font-black uppercase tracking-wider text-[#7C3AED] dark:text-[#C4B2FF] block mb-1">
-                Direct Line
+              <span className="text-xs font-mono uppercase tracking-wider text-[#7C3AED] dark:text-[#C4B0F7] block mb-1">
+                Contact Number
               </span>
-              <h3 className="text-lg sm:text-xl font-bold text-[#261D39] dark:text-[#FAF7FF] mb-2 font-mono">
+              <h3 className="text-base sm:text-lg font-bold text-[#1E142B] dark:text-[#F8F5FD] mb-2 font-mono">
                 {PORTFOLIO_DATA.personal.phone}
               </h3>
-              <p className="text-xs text-[#71618B] dark:text-[#A798BF] leading-relaxed">
-                Available for SMS messages and calls regarding software discussions.
+              <p className="text-xs text-[#6F5E86] dark:text-[#A798BE] leading-relaxed">
+                Available for SMS messages and phone calls regarding IT opportunities.
               </p>
             </div>
 
-            <div className="mt-8 pt-4 border-t border-[#F2E8FA] dark:border-[#2F1F46]">
+            <div className="mt-8 pt-4 border-t border-[#F2E8FA] dark:border-[#2C1B40]">
               <a
                 href={`tel:${PORTFOLIO_DATA.personal.phone.replace(/\s+/g, '')}`}
-                className="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full text-xs font-black text-[#4D347B] dark:text-[#FAF7FF] bg-[#FAF7FD] dark:bg-[#291B41] hover:bg-[#F2E8FA] dark:hover:bg-[#342252] border border-[#ECE0FA] dark:border-[#3A2D50] transition-colors"
+                className="w-full inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-xs font-bold text-[#2D1A45] dark:text-[#FAF7FF] bg-[#FAF8FD] dark:bg-[#221435] hover:bg-[#F5EFFC] dark:hover:bg-[#2A1840] border border-[#E4D7F5] dark:border-[#382652] transition-colors active:scale-95"
               >
                 <span>Call or SMS</span>
                 <ArrowUpRight className="w-4 h-4" />
@@ -139,51 +138,49 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Location Card */}
-          <div className="p-8 sm:p-10 rounded-[2.5rem] bg-white dark:bg-[#1E152E] border border-[#E9DDF7] dark:border-[#38264F] shadow-xs hover:border-[#B8A2F9] dark:hover:border-[#7C3AED] hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          {/* Location Plaque */}
+          <div className="p-8 sm:p-9 rounded-2xl bg-white/90 dark:bg-[#1A1028]/90 backdrop-blur-md border border-[#E4D7F5] dark:border-[#382652] shadow-2xs hover:border-[#9D84D6] dark:hover:border-[#7C3AED] hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
             <div>
-              <div className="w-14 h-14 rounded-2xl bg-[#F5EEFD] dark:bg-[#2B1B43] text-[#7C3AED] dark:text-[#C4B2FF] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <MapPin className="w-7 h-7" />
+              <div className="w-12 h-12 rounded-xl bg-[#FAF5FF] dark:bg-[#25153A] text-[#7C3AED] dark:text-[#C4B0F7] flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+                <MapPin className="w-5 h-5" />
               </div>
-              <span className="text-xs font-black uppercase tracking-wider text-[#7C3AED] dark:text-[#C4B2FF] block mb-1">
-                Base
+              <span className="text-xs font-mono uppercase tracking-wider text-[#7C3AED] dark:text-[#C4B0F7] block mb-1">
+                Geographic Anchor
               </span>
-              <h3 className="text-lg sm:text-xl font-bold text-[#261D39] dark:text-[#FAF7FF] mb-2">
+              <h3 className="text-base sm:text-lg font-bold text-[#1E142B] dark:text-[#F8F5FD] mb-2">
                 {PORTFOLIO_DATA.personal.location}
               </h3>
-              <p className="text-xs text-[#71618B] dark:text-[#A798BF] leading-relaxed">
+              <p className="text-xs text-[#6F5E86] dark:text-[#A798BE] leading-relaxed">
                 Davao del Norte State College (DNSC) · Davao Region, Philippines
               </p>
             </div>
 
-            <div className="mt-8 pt-4 border-t border-[#F2E8FA] dark:border-[#2F1F46] flex items-center justify-between text-xs text-[#7F6F96] dark:text-[#A292BD]">
-              <span>Timezone: GMT+8</span>
-              <span className="font-bold text-[#7C3AED] dark:text-[#C4B2FF]">DNSC Student</span>
+            <div className="mt-8 pt-4 border-t border-[#F2E8FA] dark:border-[#2C1B40] flex items-center justify-between text-xs font-mono text-[#827198] dark:text-[#A494BE]">
+              <span>GMT+8 (PST)</span>
+              <span className="text-[#10B981]">Active Student</span>
             </div>
           </div>
 
         </div>
 
         {/* Social Platforms Row */}
-        <div className="max-w-4xl mx-auto">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            {socials.map((s) => {
-              const IconComp = s.icon;
-              return (
-                <a
-                  key={s.name}
-                  href={s.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3.5 rounded-full bg-white dark:bg-[#1E152E] border border-[#E9DDF7] dark:border-[#38264F] hover:border-[#B8A2F9] dark:hover:border-[#7C3AED] shadow-2xs hover:shadow-md transition-all duration-200 text-xs font-bold text-[#35254E] dark:text-[#FAF7FF] group"
-                >
-                  <IconComp className="w-4 h-4 text-[#7C3AED] dark:text-[#C4B2FF]" />
-                  <span>{s.name} ({s.handle})</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 text-[#9D8CB7] group-hover:text-[#7C3AED] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                </a>
-              );
-            })}
-          </div>
+        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4">
+          {socials.map((s) => {
+            const IconComp = s.icon;
+            return (
+              <a
+                key={s.name}
+                href={s.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-xl bg-white/90 dark:bg-[#1A1028]/90 border border-[#E4D7F5] dark:border-[#382652] hover:border-[#9D84D6] dark:hover:border-[#7C3AED] shadow-2xs transition-all duration-200 text-xs font-bold text-[#2D1A45] dark:text-[#FAF7FF] group active:scale-95"
+              >
+                <IconComp className="w-4 h-4 text-[#7C3AED] dark:text-[#C4B0F7]" />
+                <span>{s.name} ({s.handle})</span>
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#8D7A9E] group-hover:text-[#7C3AED] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+              </a>
+            );
+          })}
         </div>
 
       </div>

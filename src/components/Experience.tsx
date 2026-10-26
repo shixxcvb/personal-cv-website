@@ -1,47 +1,49 @@
-import { Code2, GitBranch, Layers, Laptop, Sparkles, CheckCircle2 } from "lucide-react";
+import { Code2, GitBranch, Layers, CheckCircle2 } from "lucide-react";
 import { PORTFOLIO_DATA } from "../data/portfolioData";
 
 export function Experience() {
   return (
-    <section id="experience" className="py-28 relative overflow-hidden">
+    <section id="experience" className="py-28 relative overflow-hidden bg-[#FAF6FD]/60 dark:bg-[#130B1E]/60 border-t border-[#EDE0FA] dark:border-[#2C1C3E]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Section Header */}
+        {/* Section Index Kicker */}
+        <div className="flex items-center gap-2.5 text-xs font-mono tracking-wider uppercase text-[#7C3AED] dark:text-[#C4B0F7] mb-4">
+          <span>06 / Applied Practice</span>
+          <span aria-hidden="true" className="text-[#9D84D6]">·</span>
+          <span className="text-[#6C5882] dark:text-[#A796BD]">Coursework &amp; Laboratories</span>
+        </div>
+
+        {/* Section Headline */}
         <div className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-[#7C3AED] dark:text-[#C4B2FF] mb-3">
-            <span>05</span>
-            <span aria-hidden="true">✦</span>
-            <span>Laboratory &amp; Collaborative Practice</span>
-          </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-[#261D39] dark:text-[#FAF7FF] leading-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-[#1E142B] dark:text-[#F8F5FD] leading-tight">
             Academic{" "}
-            <span className="italic font-serif font-normal text-[#7C3AED] dark:text-[#C4B2FF]">
+            <span className="font-editorial-italic font-normal text-[#7C3AED] dark:text-[#C4B0F7]">
               Experience
             </span>
           </h2>
-          <p className="mt-3 text-base text-[#615178] dark:text-[#BCAECF]">
-            Authentic academic project development, collaborative laboratories, and hands-on software design practice at Davao del Norte State College.
+          <p className="mt-3 text-base text-[#594770] dark:text-[#C4B5DB]">
+            Hands-on technical implementation, team software development, and UI/UX design practice conducted in the IT laboratories of Davao del Norte State College.
           </p>
         </div>
 
-        {/* Academic Experience Asymmetrical Grid */}
+        {/* 2-Column Editorial Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {PORTFOLIO_DATA.academicExperience.map((item, idx) => (
             <div
               key={idx}
-              className="p-8 sm:p-10 rounded-[2.5rem] bg-white/80 dark:bg-[#1E152E]/80 backdrop-blur-md border border-[#E9DDF7] dark:border-[#38264F] shadow-xs hover:border-[#B8A2F9] dark:hover:border-[#7C3AED] hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+              className="p-8 sm:p-10 rounded-2xl bg-white/80 dark:bg-[#1A1028]/80 backdrop-blur-md border border-[#E4D7F5] dark:border-[#382652] shadow-2xs hover:border-[#9D84D6] dark:hover:border-[#7C3AED] hover:shadow-md transition-all duration-300 flex flex-col justify-between group"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-xs font-black uppercase tracking-wider text-[#9333EA] dark:text-[#F1BCE1]">
+                  <span className="font-mono text-xs uppercase tracking-wider text-[#7C3AED] dark:text-[#C4B0F7]">
                     {item.category}
                   </span>
-                  <span className="text-xs font-mono font-bold text-[#B8A2F9] dark:text-[#7C3AED]">
-                    0{idx + 1}
+                  <span className="font-mono text-xs text-[#8B779E] dark:text-[#9A87B2]">
+                    REC 0{idx + 1}
                   </span>
                 </div>
 
-                <h3 className="text-2xl font-black text-[#261D39] dark:text-[#FAF7FF] mb-3 group-hover:text-[#7C3AED] dark:group-hover:text-[#C4B2FF] transition-colors">
+                <h3 className="text-2xl font-bold text-[#1E142B] dark:text-[#F8F5FD] mb-3 group-hover:text-[#7C3AED] dark:group-hover:text-[#C4B0F7] transition-colors">
                   {item.title}
                 </h3>
 
@@ -50,20 +52,20 @@ export function Experience() {
                 </p>
 
                 {/* Key Deliverables */}
-                <div className="space-y-2 pt-4 border-t border-[#F0E4FB] dark:border-[#2F1F46]">
+                <div className="space-y-2 pt-4 border-t border-[#F0E4FB] dark:border-[#2F1D46]">
                   {item.deliverables.map((deliv, dIdx) => (
-                    <div key={dIdx} className="flex items-center gap-2 text-xs font-semibold text-[#66547F] dark:text-[#C2B4D6]">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] dark:bg-[#C4B2FF]" />
+                    <div key={dIdx} className="flex items-center gap-2 text-xs font-semibold text-[#5B4775] dark:text-[#C3B3D9]">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#7C3AED] dark:bg-[#C4B0F7]" />
                       <span>{deliv}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              {/* Bottom Tag */}
-              <div className="mt-8 pt-4 border-t border-[#F0E4FB] dark:border-[#2F1F46] flex items-center justify-between text-xs text-[#7F6F96] dark:text-[#A494BE]">
+              {/* Bottom Card Footer */}
+              <div className="mt-8 pt-4 border-t border-[#F0E4FB] dark:border-[#2F1D46] flex items-center justify-between text-xs font-mono text-[#827198] dark:text-[#A494BE]">
                 <span>Davao del Norte State College</span>
-                <span className="font-bold text-[#7C3AED] dark:text-[#C4B2FF]">Collaborative</span>
+                <span className="text-[#10B981]">Verified Lab Work</span>
               </div>
             </div>
           ))}

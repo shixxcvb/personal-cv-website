@@ -1,98 +1,94 @@
-import { GraduationCap, School, Sparkles, BookOpen, CheckCircle2 } from "lucide-react";
+import { GraduationCap, School, CheckCircle2 } from "lucide-react";
 import { PORTFOLIO_DATA, EducationItem } from "../data/portfolioData";
 
 export function Education() {
   return (
-    <section id="education" className="py-28 relative overflow-hidden bg-[#FAF6FD]/60 dark:bg-[#160F24]/60 border-y border-[#EDE0FA] dark:border-[#2C1F3F]">
+    <section id="education" className="py-28 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Section Header */}
+        {/* Section Index Kicker */}
+        <div className="flex items-center gap-2.5 text-xs font-mono tracking-wider uppercase text-[#7C3AED] dark:text-[#C4B0F7] mb-4">
+          <span>05 / Academic Anthology</span>
+          <span aria-hidden="true" className="text-[#9D84D6]">·</span>
+          <span className="text-[#6C5882] dark:text-[#A796BD]">Educational Milestones</span>
+        </div>
+
+        {/* Section Headline */}
         <div className="max-w-3xl mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-[#7C3AED] dark:text-[#C4B2FF] mb-3">
-            <span>04</span>
-            <span aria-hidden="true">✦</span>
-            <span>Academic Pathway</span>
-          </div>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-[#261D39] dark:text-[#FAF7FF] leading-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-[#1E142B] dark:text-[#F8F5FD] leading-tight">
             Education &amp;{" "}
-            <span className="italic font-serif font-normal text-[#7C3AED] dark:text-[#C4B2FF]">
-              Milestones
+            <span className="font-editorial-italic font-normal text-[#7C3AED] dark:text-[#C4B0F7]">
+              Foundations
             </span>
           </h2>
-          <p className="mt-3 text-base text-[#615178] dark:text-[#BCAECF]">
-            My academic foundation, currently advancing through fourth-year Information Technology studies.
+          <p className="mt-3 text-base text-[#594770] dark:text-[#C4B5DB]">
+            My formal learning journey, currently completing the Bachelor of Science in Information Technology degree at Davao del Norte State College.
           </p>
         </div>
 
-        {/* Winding Constellation Milestones */}
-        <div className="space-y-8 relative">
-          {PORTFOLIO_DATA.education.map((item: EducationItem, idx: number) => {
-            const rotations = ["rotate-0", "-rotate-1", "rotate-1"];
-            const rotClass = rotations[idx % rotations.length];
+        {/* Academic Anthology Chapters */}
+        <div className="space-y-6">
+          {PORTFOLIO_DATA.education.map((item: EducationItem, idx: number) => (
+            <div
+              key={item.id}
+              className="group p-8 sm:p-10 rounded-2xl bg-white/80 dark:bg-[#1A1028]/80 backdrop-blur-md border border-[#E4D7F5] dark:border-[#382652] shadow-2xs hover:border-[#9D84D6] dark:hover:border-[#7C3AED] hover:shadow-lg transition-all duration-300"
+            >
+              <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
+                
+                {/* Left Hierarchy */}
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 text-xs font-mono text-[#7C3AED] dark:text-[#C4B0F7] mb-2">
+                    <span className="font-bold">CHAPTER 0{idx + 1}</span>
+                    <span aria-hidden="true">·</span>
+                    <span className="uppercase tracking-wider">{item.status}</span>
+                    {item.yearLevel && (
+                      <>
+                        <span aria-hidden="true">·</span>
+                        <span className="text-[#6C5882] dark:text-[#A796BD]">{item.yearLevel}</span>
+                      </>
+                    )}
+                  </div>
 
-            return (
-              <div
-                key={item.id}
-                className={`relative p-8 sm:p-10 rounded-[2.5rem] bg-white dark:bg-[#1E152E] border border-[#E9DDF7] dark:border-[#38264F] shadow-xs hover:border-[#B8A2F9] dark:hover:border-[#7C3AED] hover:shadow-xl transition-all duration-300 ${rotClass} group`}
-              >
-                <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
+                  <h3 className="text-2xl sm:text-3xl font-black text-[#1E142B] dark:text-[#F8F5FD] mb-1 group-hover:text-[#7C3AED] dark:group-hover:text-[#C4B0F7] transition-colors">
+                    {item.institution}
+                  </h3>
                   
-                  {/* Left: Institution & Degree */}
-                  <div className="flex-1">
-                    <div className="flex items-center gap-3 mb-2">
-                      <div className="w-10 h-10 rounded-2xl bg-[#F5EEFD] dark:bg-[#2B1B43] text-[#7C3AED] dark:text-[#C4B2FF] flex items-center justify-center">
-                        {item.current ? (
-                          <GraduationCap className="w-5 h-5" />
-                        ) : (
-                          <School className="w-5 h-5" />
-                        )}
-                      </div>
-                      <span className="text-xs font-black uppercase tracking-wider text-[#9333EA] dark:text-[#F1BCE1]">
-                        {item.status} {item.yearLevel ? `· ${item.yearLevel}` : ""}
+                  <p className="text-base font-semibold text-[#543E70] dark:text-[#D5C6EB] mb-4">
+                    {item.degree}
+                  </p>
+
+                  <p className="max-w-3xl text-sm sm:text-base text-[#56456E] dark:text-[#BFB1D3] leading-relaxed mb-6">
+                    {item.description}
+                  </p>
+
+                  {/* Highlights with subtle separators */}
+                  <div className="flex flex-wrap items-center gap-x-2 text-xs font-medium text-[#65527E] dark:text-[#BAA9CF]">
+                    <span className="font-mono text-[#7C3AED] dark:text-[#C4B0F7]">Focus:</span>
+                    {item.highlights.map((h, hIdx) => (
+                      <span key={hIdx} className="flex items-center gap-2">
+                        {hIdx > 0 && <span aria-hidden="true" className="text-[#9D84D6]">·</span>}
+                        <span>{h}</span>
                       </span>
-                    </div>
-
-                    <h3 className="text-2xl sm:text-3xl font-black text-[#261D39] dark:text-[#FAF7FF] mb-1 group-hover:text-[#7C3AED] dark:group-hover:text-[#C4B2FF] transition-colors">
-                      {item.institution}
-                    </h3>
-                    <p className="text-base font-bold text-[#674F8B] dark:text-[#D1C3E6] mb-4">
-                      {item.degree}
-                    </p>
-
-                    <p className="max-w-2xl text-sm sm:text-base text-[#56456E] dark:text-[#BFB1D3] leading-relaxed mb-6">
-                      {item.description}
-                    </p>
-
-                    {/* Highlights */}
-                    <div className="flex flex-wrap gap-2">
-                      {item.highlights.map((h, hIdx) => (
-                        <span
-                          key={hIdx}
-                          className="px-3 py-1 rounded-full text-xs font-semibold bg-[#FAF5FF] dark:bg-[#281A3F] border border-[#E9DCF8] dark:border-[#3B255B] text-[#553C7D] dark:text-[#D1C2E6]"
-                        >
-                          ✦ {h}
-                        </span>
-                      ))}
-                    </div>
+                    ))}
                   </div>
-
-                  {/* Right Status Badge */}
-                  <div className="shrink-0">
-                    <div
-                      className={`px-4 py-2 rounded-2xl text-xs font-black tracking-wider uppercase border ${
-                        item.current
-                          ? "bg-[#F3E8FF] dark:bg-[#341F4E] border-[#D9C8FF] dark:border-[#5B378B] text-[#7C3AED] dark:text-[#D8B4FE]"
-                          : "bg-[#FAF7FD] dark:bg-[#241738] border-[#EDE1FA] dark:border-[#3A255B] text-[#786791] dark:text-[#A797BD]"
-                      }`}
-                    >
-                      {item.current ? "Active Degree ✦ Senior" : "Alumnus"}
-                    </div>
-                  </div>
-
                 </div>
+
+                {/* Right Status Indicator */}
+                <div className="shrink-0 self-start">
+                  <div
+                    className={`px-3 py-1.5 rounded-lg text-xs font-mono uppercase tracking-wider border ${
+                      item.current
+                        ? "bg-[#FAF5FF] dark:bg-[#25153A] border-[#D9C8FF] dark:border-[#523377] text-[#7C3AED] dark:text-[#C4B0F7]"
+                        : "bg-[#FAF8FD] dark:bg-[#1D122C] border-[#EDE1FA] dark:border-[#382352] text-[#7B6A92] dark:text-[#A291B7]"
+                    }`}
+                  >
+                    {item.current ? "Active Senior Student" : "Completed"}
+                  </div>
+                </div>
+
               </div>
-            );
-          })}
+            </div>
+          ))}
         </div>
 
       </div>

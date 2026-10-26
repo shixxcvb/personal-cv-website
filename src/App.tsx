@@ -33,7 +33,7 @@ export default function App() {
       {/* Main Experience Flow */}
       <main className="relative z-10">
         {/* 1. Extraordinary Hero Section */}
-        <Hero />
+        <Hero onOpenResume={() => setIsResumeOpen(true)} />
 
         {/* 2. Kinetic Editorial Marquee Banner */}
         <MarqueeBanner />

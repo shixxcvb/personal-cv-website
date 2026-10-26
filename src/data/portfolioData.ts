@@ -29,7 +29,7 @@ export const PORTFOLIO_DATA = {
   personal: {
     fullName: "Charlene Calamba",
     nickname: "Charlene",
-    title: "Future IT Professional",
+    title: "Frontend Developer & IT Student",
     supportingDescription: "Information Technology Student | Aspiring Web Developer | Creative Tech Enthusiast",
     course: "Bachelor of Science in Information Technology",
     yearSection: "Fourth Year, BSIT 4B",
@@ -40,8 +40,9 @@ export const PORTFOLIO_DATA = {
     githubUrl: "https://github.com/shixxcvb",
     linkedinUrl: "https://www.linkedin.com/in/charlene-calamba-a89666446/",
     facebookUrl: "https://www.facebook.com/charlenecalamba30",
+    avatarUrl: "/assets/aistudio/chao_4fe8053a.jpg",
     heroHeadline: "Hey, I'm Charlene!",
-    heroSubheading: "Future IT Professional",
+    heroSubheading: "Frontend Developer & IT Student",
     heroManifesto: "I turn curiosity into code and creativity into digital experiences.",
     welcomeKicker: "Charlene's Creative Universe",
     aboutIntro:

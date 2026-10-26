@@ -59,17 +59,24 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
         <div className="p-8 md:p-12 space-y-8 print:p-0 print:space-y-6 text-sm">
           {/* Header */}
           <div className="border-b border-[#EDE4F7] dark:border-[#312547] pb-6">
-            <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
-              <div>
-                <h1 id="resume-title" className="text-2xl md:text-3xl font-black tracking-tight text-[#261D39] dark:text-white">
-                  {PORTFOLIO_DATA.personal.fullName}
-                </h1>
-                <p className="text-base font-bold text-[#7C3AED] dark:text-[#C4B2FF] mt-1">
-                  {PORTFOLIO_DATA.personal.title} · {PORTFOLIO_DATA.personal.course}
-                </p>
-                <p className="text-xs font-medium text-[#6F6088] dark:text-[#B1A3C6] mt-0.5">
-                  {PORTFOLIO_DATA.personal.school} · {PORTFOLIO_DATA.personal.yearSection}
-                </p>
+            <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
+              <div className="flex items-center gap-4">
+                <img
+                  src={PORTFOLIO_DATA.personal.avatarUrl}
+                  alt="Charlene Calamba"
+                  className="w-16 h-20 rounded-lg object-cover object-top border border-[#E4D7F5] dark:border-[#382652] shadow-2xs shrink-0"
+                />
+                <div>
+                  <h1 id="resume-title" className="text-2xl md:text-3xl font-black tracking-tight text-[#261D39] dark:text-white">
+                    {PORTFOLIO_DATA.personal.fullName}
+                  </h1>
+                  <p className="text-base font-bold text-[#7C3AED] dark:text-[#C4B2FF] mt-1">
+                    {PORTFOLIO_DATA.personal.title} · {PORTFOLIO_DATA.personal.course}
+                  </p>
+                  <p className="text-xs font-medium text-[#6F6088] dark:text-[#B1A3C6] mt-0.5">
+                    {PORTFOLIO_DATA.personal.school} · {PORTFOLIO_DATA.personal.yearSection}
+                  </p>
+                </div>
               </div>
 
               {/* Contact Grid */}

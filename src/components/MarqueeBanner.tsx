@@ -7,12 +7,12 @@ interface MarqueeBannerProps {
 export function MarqueeBanner({
   text = [
     "TURNING CURIOSITY INTO CODE",
-    "CHARLENE'S CREATIVE UNIVERSE",
-    "FUTURE IT PROFESSIONAL",
+    "CHARLENE CALAMBA",
+    "FRONTEND DEVELOPER & IT STUDENT",
     "DAVAO DEL NORTE STATE COLLEGE",
     "BSIT 4B",
     "4 DEPLOYED WEB APPLICATIONS",
-    "DREAMY DIGITAL EXPERIENCES",
+    "CREATIVE DIGITAL EXPERIENCES",
   ],
   className = "",
 }: MarqueeBannerProps) {

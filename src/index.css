@@ -2,26 +2,38 @@
 
 @layer base {
   :root {
-    --bg-universe-light: #FCFAFF;
-    --text-universe-light: #261D39;
-    --lavender: #B8A2F9;
-    --lilac: #D9C8FF;
-    --pink: #F8C8E8;
-    --periwinkle: #A5B4FC;
-    --deep-violet: #4D347B;
+    --bg-universe: #FAF8F5;
+    --text-universe: #1D1526;
+    --lavender-mist: #F4EFFF;
+    --wisteria: #9D84D6;
+    --plum: #3B215E;
+    --paper-border: rgba(45, 26, 75, 0.08);
   }
 
   .dark {
-    --bg-universe-dark: #120D1D;
-    --card-universe-dark: #1F1730;
-    --lavender-dark: #C4B2FF;
-    --pink-dark: #F1BCE1;
-    --text-universe-dark: #FAF7FF;
+    --bg-universe: #0E0716;
+    --text-universe: #F8F5FD;
+    --lavender-mist: #1A1028;
+    --wisteria: #C4B0F7;
+    --plum: #F1DCF7;
+    --paper-border: rgba(220, 205, 255, 0.12);
   }
 
   html {
     scroll-behavior: smooth;
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Editorial serif styling */
+  .font-editorial {
+    font-family: 'Fraunces', Georgia, serif;
+    font-variation-settings: 'opsz' 36, 'wght' 400;
+  }
+  
+  .font-editorial-italic {
+    font-family: 'Fraunces', Georgia, serif;
+    font-style: italic;
+    font-variation-settings: 'opsz' 48, 'wght' 400;
   }
 
   /* Custom subtle scrollbar */
@@ -32,98 +44,53 @@
     background: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background: #C4B2FF;
+    background: #C4B0F7;
     border-radius: 9999px;
   }
   .dark ::-webkit-scrollbar-thumb {
-    background: #3B2A57;
+    background: #3B2456;
   }
 }
 
-/* Kinetic Marquee Keyframes */
-@keyframes marqueeScroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+/* Subtle Art Studio Grain Overlay */
+.editorial-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
 }
 
-.animate-marquee {
+.dark .editorial-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* Kinetic Ticker Ribbon */
+@keyframes tickerGlide {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
   display: flex;
   width: max-content;
-  animation: marqueeScroll 25s linear infinite;
+  animation: tickerGlide 32s linear infinite;
 }
 
-.animate-marquee:hover {
+.animate-ticker:hover {
   animation-play-state: paused;
 }
 
-/* Floating 3D and Cosmic Elements */
-@keyframes floatGentle {
+/* Gentle ambient breathing */
+@keyframes ambientGlow {
   0%, 100% {
-    transform: translateY(0px) rotate(0deg);
+    transform: scale(1) translate(0px, 0px);
+    opacity: 0.35;
   }
   50% {
-    transform: translateY(-16px) rotate(3deg);
+    transform: scale(1.08) translate(10px, -15px);
+    opacity: 0.55;
   }
 }
 
-@keyframes floatOrbital {
-  0% {
-    transform: rotate(0deg) translateX(12px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translateX(12px) rotate(-360deg);
-  }
-}
-
-@keyframes pulseStar {
-  0%, 100% {
-    transform: scale(1) rotate(0deg);
-    opacity: 0.8;
-  }
-  50% {
-    transform: scale(1.25) rotate(90deg);
-    opacity: 1;
-  }
-}
-
-@keyframes spinSlow {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-float-gentle {
-  animation: floatGentle 6s ease-in-out infinite;
-}
-
-.animate-orbital {
-  animation: floatOrbital 10s linear infinite;
-}
-
-.animate-star-pulse {
-  animation: pulseStar 4s ease-in-out infinite;
-}
-
-.animate-spin-slow {
-  animation: spinSlow 20s linear infinite;
-}
-
-/* Noise overlay utility */
-.bg-grain {
-  background-image: radial-gradient(rgba(184, 162, 249, 0.12) 1px, transparent 0);
-  background-size: 24px 24px;
-}
-
-.dark .bg-grain {
-  background-image: radial-gradient(rgba(196, 178, 255, 0.08) 1px, transparent 0);
-  background-size: 24px 24px;
+.animate-ambient-glow {
+  animation: ambientGlow 12s ease-in-out infinite;
 }
 
 /* Print Styles */

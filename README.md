@@ -19,6 +19,7 @@ Designed with the **"Charlene's Creative Universe"** concept, this website featu
 - **GitHub:** [@shixxcvb](https://github.com/shixxcvb)
 - **LinkedIn:** [Charlene Calamba](https://www.linkedin.com/in/charlene-calamba-a89666446/)
 - **Facebook:** [Charlene Calamba](https://www.facebook.com/charlenecalamba30)
+- **Profile Photo:** Embedded directly from `/assets/aistudio/chao_4fe8053a.jpg` (Editorial portrait framing)
 
 ---
 
