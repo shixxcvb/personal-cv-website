@@ -57,7 +57,7 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               Curriculum Vitae
             </span>
             <span className="hidden sm:inline-block text-xs text-[#7A6993] dark:text-[#A797BD]">
-              · {PORTFOLIO_DATA.personal.fullName} (BSIT 4B)
+              · {PORTFOLIO_DATA.personal.fullName}
             </span>
           </div>
 
@@ -100,10 +100,10 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                     {PORTFOLIO_DATA.personal.fullName}
                   </h1>
                   <p className="text-sm sm:text-base font-semibold text-[#7C3AED] dark:text-[#C4B0F7] print:text-neutral-800 mt-0.5">
-                    {PORTFOLIO_DATA.personal.course} ({PORTFOLIO_DATA.personal.yearSection})
+                    Frontend Developer &amp; Web Specialist
                   </p>
                   <p className="text-xs text-[#6B5A84] dark:text-[#B3A3C9] print:text-neutral-600">
-                    {PORTFOLIO_DATA.personal.school} · Panabo City, Davao del Norte
+                    Panabo City, Davao del Norte, Philippines
                   </p>
                 </div>
 
@@ -169,7 +169,7 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               <span>Career Objective</span>
             </h2>
             <p className="text-xs sm:text-sm text-[#45345E] dark:text-[#D1C4E4] print:text-neutral-800 leading-relaxed text-justify">
-              Motivated Fourth-Year Information Technology student at Davao del Norte State College with strong foundational skills in frontend web development, semantic markup, and responsive design. Seeking an Internship / On-the-Job Training (OJT) role where I can apply my knowledge in building intuitive, functional web applications while collaborating with an engineering team to solve real-world problems.
+              Dedicated and detail-oriented Frontend Developer with strong foundational skills in modern web development, semantic HTML5 markup, responsive UI design, and interactive web applications. Eager to contribute technical proficiency, problem-solving abilities, and an eye for clean user interfaces to real-world software projects and collaborative engineering teams.
             </p>
           </div>
 
@@ -182,16 +182,16 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
             <div className="space-y-3.5 text-xs">
               <div>
                 <div className="flex flex-col sm:flex-row sm:items-baseline justify-between font-bold text-[#1E142B] dark:text-white print:text-black">
-                  <span className="text-sm">Davao del Norte State College (DNSC)</span>
+                  <span className="text-sm">Davao del Norte State College</span>
                   <span className="text-xs font-medium text-[#7C3AED] dark:text-[#C4B0F7] print:text-neutral-700">
-                    2022 – Present (Expected Graduation: 2026)
+                    Panabo City, Davao del Norte
                   </span>
                 </div>
                 <div className="text-[#4E3D67] dark:text-[#C3B3D9] print:text-neutral-800 font-semibold mt-0.5">
-                  Bachelor of Science in Information Technology (BSIT) · Section 4B
+                  Bachelor of Science in Information Technology
                 </div>
                 <p className="text-[#685680] dark:text-[#A898BE] print:text-neutral-600 mt-1 leading-normal">
-                  Location: Panabo City, Davao del Norte · Focus on Web Development, Systems Analysis, and Database Management.
+                  Coursework: Web Systems &amp; Technologies, Database Systems, Software Engineering, Systems Analysis &amp; Design.
                 </p>
               </div>
 

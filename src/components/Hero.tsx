@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, FileText, MapPin, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowUpRight, FileText, MapPin } from "lucide-react";
 import { PORTFOLIO_DATA } from "../data/portfolioData";
 
 interface HeroProps {
@@ -23,19 +23,6 @@ export function Hero({ onOpenResume }: HeroProps) {
           
           {/* Left Column: Immediately leads with Charlene Calamba (7 cols on sm+) */}
           <div className="sm:col-span-7 flex flex-col items-start text-left">
-            
-            {/* Live Status Pill with pulsing beacon */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/80 dark:bg-[#1E132D]/80 border border-[#E4D7F5] dark:border-[#3A2754] shadow-2xs backdrop-blur-xs mb-5 transition-transform duration-300 hover:scale-105 cursor-default">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
-              </span>
-              <span className="text-xs font-semibold text-[#57436E] dark:text-[#D1C3E6]">
-                Available for OJT &amp; Web Projects
-              </span>
-              <span aria-hidden="true" className="text-[#9D84D6] text-xs">✦</span>
-              <span className="text-xs text-[#806D96] dark:text-[#A998C0]">Panabo City</span>
-            </div>
 
             {/* The absolute first thing seen at the very top: CHARLENE CALAMBA */}
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-black tracking-tight leading-[0.92] text-[#1E142B] dark:text-[#F8F5FD] mb-6">
@@ -98,13 +85,8 @@ export function Hero({ onOpenResume }: HeroProps) {
             {/* Pure cutout presentation directly on the page with floating animation */}
             <div className="relative w-full max-w-[280px] sm:max-w-[340px] md:max-w-[400px] lg:max-w-[450px] flex justify-center sm:justify-end animate-float-gentle">
               
-              {/* Soft Dreamy Ambient Backlight Aura directly behind her silhouette */}
-              <div className="absolute -inset-6 rounded-full bg-gradient-to-tr from-[#9D84D6]/35 via-[#F6DCEB]/30 to-[#A5B4FC]/35 blur-3xl opacity-80 dark:opacity-65 pointer-events-none animate-ambient-glow" />
-
-              {/* Decorative subtle floating star */}
-              <div className="absolute -top-4 -left-4 z-20 hidden sm:flex items-center justify-center w-10 h-10 rounded-full bg-white/90 dark:bg-[#1E132D]/90 shadow-md border border-[#E4D7F5] dark:border-[#3A2754] animate-spin-slow">
-                <Sparkles className="w-5 h-5 text-[#7C3AED] dark:text-[#C4B0F7]" />
-              </div>
+              {/* Soft Ambient Backlight Aura behind silhouette */}
+              <div className="absolute -inset-6 rounded-full bg-gradient-to-tr from-[#9D84D6]/20 via-[#F6DCEB]/15 to-[#A5B4FC]/20 blur-3xl opacity-60 dark:opacity-40 pointer-events-none" />
 
               {/* The Genuine Photo Cutout: No box, no border, no rectangular frame */}
               <img
