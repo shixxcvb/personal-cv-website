@@ -96,13 +96,7 @@ export function Hero({ onOpenResume }: HeroProps) {
                 loading="eager"
               />
 
-              {/* Floating Mini Tech Pill in front of silhouette */}
-              <div className="absolute -bottom-2 sm:bottom-4 left-0 sm:-left-6 z-20 px-3.5 py-1.5 rounded-xl bg-white/95 dark:bg-[#1E132D]/95 border border-[#E4D7F5] dark:border-[#3A2754] shadow-lg backdrop-blur-md flex items-center gap-2 animate-float-slow">
-                <span className="w-2 h-2 rounded-full bg-[#7C3AED]" />
-                <span className="text-xs font-bold text-[#2D1B48] dark:text-[#FAF7FF]">
-                  BSIT 4B · Web Craft
-                </span>
-              </div>
+
 
             </div>
 

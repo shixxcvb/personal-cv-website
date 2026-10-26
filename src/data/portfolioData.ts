@@ -32,7 +32,7 @@ export const PORTFOLIO_DATA = {
     title: "Frontend Developer & IT Student",
     supportingDescription: "Information Technology Student | Aspiring Web Developer | Creative Tech Enthusiast",
     course: "Bachelor of Science in Information Technology",
-    yearSection: "Fourth Year, BSIT 4B",
+    yearSection: "Fourth Year",
     school: "Davao del Norte State College",
     location: "Panabo City, Philippines",
     email: "charlenecalamba00@gmail.com",
@@ -134,7 +134,7 @@ export const PORTFOLIO_DATA = {
       id: "dnsc",
       institution: "Davao del Norte State College",
       degree: "Bachelor of Science in Information Technology",
-      yearLevel: "Fourth Year – BSIT 4B",
+      yearLevel: "Fourth Year",
       status: "Currently Studying",
       current: true,
       description:
