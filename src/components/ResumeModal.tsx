@@ -56,9 +56,9 @@ export function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
         </div>
 
         {/* CV Printable Body */}
-        <div className="p-8 md:p-12 space-y-8 print:p-0 print:space-y-6 text-sm">
+        <div id="printable-cv" className="p-8 md:p-12 space-y-8 print:p-0 print:space-y-6 text-sm bg-white dark:bg-[#1A1426] print:!bg-white print:!text-[#111827]">
           {/* Header */}
-          <div className="border-b border-[#EDE4F7] dark:border-[#312547] pb-6">
+          <div className="border-b border-[#EDE4F7] dark:border-[#312547] print:border-gray-300 pb-6">
             <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
               <div className="flex items-center gap-4">
                 <img
